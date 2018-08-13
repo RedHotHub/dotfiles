@@ -1,7 +1,11 @@
 
-for file in ~/.{zprompt,aliases,exports,functions}; do
+for file in ~/.{zprompt,aliases,exports,functions,aliases_temp}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
+
+secrets="$HOME/dotfiles/conf/secrets"
+[ -r "$secrets" ] && [ -f "$secrets" ] && source "$secrets";
+
 unset file;
 
 # Less
