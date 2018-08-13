@@ -51,7 +51,7 @@ tmux_conf_theme_window_bg='default'
 # highlight focused pane (tmux >= 2.1), possible values are:
 #   - true
 #   - false (default)
-tmux_conf_theme_highlight_focused_pane=true
+tmux_conf_theme_highlight_focused_pane=false
 
 # focused pane colours:
 tmux_conf_theme_focused_pane_fg='default'
@@ -147,7 +147,7 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{circled_session_name}
 #     - #{hostname_ssh}
 #     - #{hostname}
-#     - #{loadavg}
+#     - #{loadavg}ar
 #     - #{pairing}
 #     - #{prefix}
 #     - #{root}
@@ -158,8 +158,8 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{uptime_s}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_status_left=' ❐ #S | ↑#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
-tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root} | #{hostname} '
+tmux_conf_theme_status_left=' #($HOME/dotfiles/scripts/online.sh) #S | ↑#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
+tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized}, #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b, #($HOME/dotfiles/scripts/get_local_ips.sh) | #($HOME/dotfiles/scripts/weather.sh)  | #{username}#{root} | #{hostname} '
 
 # status left style
 tmux_conf_theme_status_left_fg='#000000,#e4e4e4,#e4e4e4'  # black, white , white
@@ -168,8 +168,8 @@ tmux_conf_theme_status_left_attr='bold,none,none'
 
 # status right style
 tmux_conf_theme_status_right_fg='#8a8a8a,#e4e4e4,#000000' # light gray, white, black
-tmux_conf_theme_status_right_bg='#080808,#d70000,#e4e4e4' # dark gray, red, white
-tmux_conf_theme_status_right_attr='none,none,bold'
+tmux_conf_theme_status_right_bg='#080808,#d70000,#e4e4e4,#d70000' # dark gray, red, white
+tmux_conf_theme_status_right_attr='none,none,none,bold'
 
 # pairing indicator
 tmux_conf_theme_pairing='👓 '          # U+1F453
