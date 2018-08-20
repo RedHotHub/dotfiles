@@ -1,1 +1,4 @@
-{"extends": "airbnb"}
+{
+  "extends": "airbnb",
+  "eslint.packageManager": "yarn",
+}

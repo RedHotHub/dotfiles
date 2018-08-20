@@ -1,5 +1,5 @@
 [core]
-	excludesfile = $HOME/.gitignore_global
+	excludesfile = /Users/aaboureada/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -15,3 +15,5 @@
 	smudge = git-lfs smudge -- %f
 	required = true
 	clean = git-lfs clean -- %f
+[commit]
+	template = /Users/aaboureada/.stCommitMsg

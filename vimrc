@@ -197,3 +197,15 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
 
+" Buffers control
+" Move to the previous buffer with "gp"
+nnoremap gp :bp<CR>
+
+" Move to the next buffer with "gn"
+nnoremap gn :bn<CR>
+
+" List all possible buffers with "gl"
+nnoremap gl :ls<CR>
+
+" List all possible buffers with "gb" and accept a new buffer argument [1]
+nnoremap gb :ls<CR>:b
