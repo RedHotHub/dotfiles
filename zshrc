@@ -82,3 +82,6 @@ if [ -f '/Users/aaboureada/Downloads/google-cloud-sdk/path.zsh.inc' ]; then sour
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/aaboureada/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/aaboureada/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Add node_modules to the path
+export PATH="$PATH:/usr/local/lib/node_modules"

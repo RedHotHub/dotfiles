@@ -1,4 +1,20 @@
 {
   "extends": "airbnb",
-  "eslint.packageManager": "yarn",
+  "parser": "babel-eslint",
+  "rules": {
+    "react/require-extension": "off",
+    "newline-per-chained-call": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "test/**"
+        ]
+      }
+    ]
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  }
 }

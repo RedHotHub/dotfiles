@@ -135,6 +135,7 @@ brew gem install tmuxinator
 brew install wrk
 brew install neovim/neovim/neovim
 brew install libevent
+brew install diff-so-fancy
 
 brew tap buo/cask-upgrade
 
@@ -185,23 +186,30 @@ brew install mongo
 
 # Web Development
 brew install node
-npm install -g coffee-script
-npm install -g grunt-cli
-npm install -g jshint
-npm install -g jscs
-npm install -g eslint
-npm install -g less
-npm install -g nodemon
-npm install -g bower
-npm install -g mongodb
-npm install -g mongoose
-npm install -g js-beautify
-npm install -g gulp-cli
-sudo npm install -g cordova
-npm install -g ios-deploy
-npm install -g flow-bin
-npm install -g underscore-cli
-npm install -g aws-sam-local
+yarn global add coffee-script
+yarn global add grunt-cli
+yarn global add jshint
+yarn global add jscs
+yarn global add eslint
+yarn global add less
+yarn global add nodemon
+yarn global add bower
+yarn global add mongodb
+yarn global add mongoose
+yarn global add js-beautify
+yarn global add gulp-cli
+sudo yarn global add cordova
+yarn global add ios-deploy
+yarn global add flow-bin
+yarn global add underscore-cli
+yarn global add aws-sam-local
+
+yarn global add eslint
+yarn global add babel-eslint
+yarn global add eslint-config-airbnb
+yarn global add eslint-plugin-jsx-a11y
+yarn global add eslint-plugin-react
+yarn global add eslint-plugin-import
 
 # Sound
 brew install sox
@@ -226,8 +234,8 @@ brew install ffmpeg
 brew install eigen
 brew install opencv
 
-sudo npm install -g gitjk
-sudo npm install -g cordova
+sudo yarn global add gitjk
+sudo yarn global add cordova
 
 # cleanup
 brew cleanup --force
