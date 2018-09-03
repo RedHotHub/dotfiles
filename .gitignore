@@ -31,3 +31,4 @@ ssh/
 secrets
 aliases_temp
 bundle/
+tmux/

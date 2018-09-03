@@ -81,6 +81,9 @@ function precmd() {
     if (( $timer_show > 3 )) ; then
       say -v Victoria Finished in $timer_fixed
     fi
+    if (( $timer_show > 30 )) ; then
+      noti $timer_fixed
+    fi
     unset timer_fixed
     unset timer
   fi

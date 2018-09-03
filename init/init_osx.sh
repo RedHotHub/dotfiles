@@ -101,6 +101,10 @@ brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
 brew install xpdf
 brew install xz
+brew install bat
+brew install noti
+brew install ncdu
+ brew install htop
 
 # Install other useful binaries.
 brew install thefuck

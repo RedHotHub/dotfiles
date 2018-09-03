@@ -19,6 +19,9 @@ alias lint="npm run lint"
 alias ps="ps -Ao user,pid,%cpu,%mem,vsz,rss,tt,stat,start,time,command"
 alias laa="ls -ld $(find .)"
 alias top="top -o cpu"
+alias cat="bat"
+alias top="sudo htop" # alias top and fix high sierra bug
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 #git
 alias g='git'
